@@ -1,0 +1,15 @@
+.icontent-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iwidth-100p {
+    width: 100%;
+}
+
+.itext-start {
+    text-align: start;
+}
