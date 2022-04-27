@@ -1,0 +1,67 @@
+.ibtn {
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    background-color: transparent !important;
+    border: none;
+    cursor: pointer;
+    min-width: 150px;
+    padding: 0;
+}
+
+.ibtn::before {
+    background-color: rgb(28, 31, 30) !important;
+    transition: 0.3s ease-out;
+    position: absolute;
+    content: "";
+}
+
+.ibtn span {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+
+.ibtn span {
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(28, 31, 30);
+    transition: 0.2s 0.1s;
+}
+
+.ibtn span:hover {
+    color: rgb(28, 31, 30) !important;
+    transition: 0.2s 0.1s;
+}
+
+.ibtn.hover-filled-slide-up::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ibtn.hover-filled-slide-left::before {
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.ibtn.hover-filled-slide-up:hover::before {
+    height: 0%;
+}
+
+.ibtn.hover-filled-slide-left:hover::before {
+    width: 0%;
+}

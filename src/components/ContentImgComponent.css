@@ -1,17 +1,25 @@
-.iheight-img {
-    max-height: 30em;
+.iwidth-100p {
+    width: 100%;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0 !important;
+}
+
+.layout-img-i {
     display: flex;
     justify-content: center;
     padding: 1em;
 }
 
-.iwidth-100p {
-    width: 100%;
-    height: 100vh;
-    align-items: center;
-    justify-content: center;
+.img-height-i {
+    max-height: 30em;
+    max-width: 100%;
 }
 
-.itext-start {
+.itext-content-img {
     text-align: start;
+    margin-left: 0;
 }

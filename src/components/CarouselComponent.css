@@ -1,5 +1,7 @@
 .islide {
     height: 100vh;
+    max-height: 100vh;
+    max-width: 100%;
 }
 
 .maxheight-img {
