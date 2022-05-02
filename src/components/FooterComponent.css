@@ -1,4 +1,15 @@
-.ifooter {
-    height: 25vh;
-    background-color: aqua;
+.footer-i {
+    height: 18vh;
+    background-color: #013b52;
+    color: white;
+    padding-top: 2em;
+}
+
+.footer-end-i {
+    align-self: end;
+}
+
+.clear-row-i {
+    --bs-gutter-x: 0rem !important;
+    padding-left: 4rem;
 }
