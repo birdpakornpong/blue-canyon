@@ -1,9 +1,6 @@
-import React from 'react'
-import './ImgComponent.css'
+import React from "react";
+import "./ImgComponent.css";
 
 export default function ImgComponent() {
-  return (
-    <div className="img-block-i">
-    </div>
-  )
+  return <div className="img-block-i"></div>;
 }
