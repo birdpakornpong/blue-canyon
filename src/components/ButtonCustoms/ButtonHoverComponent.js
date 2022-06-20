@@ -1,9 +1,9 @@
 import React from "react";
-import { Form, FormControl, Button, Nav } from "react-bootstrap";
 import "./ButtonHoverComponent.css";
 
 export default function ButtonHoverComponent(props) {
   const slideDirection = props.slide;
+  const message = props.message;
   return (
     <>
       <button
@@ -13,7 +13,7 @@ export default function ButtonHoverComponent(props) {
             : "ibtn hover-filled-slide-left"
         }
       >
-        <span>ClickMe</span>
+        <span>{message ? message : "Clickme"}</span>
       </button>
     </>
   );
