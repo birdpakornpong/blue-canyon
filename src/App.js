@@ -1,37 +1,23 @@
-import logo from "./logo.svg";
 import "./App.css";
-import React, { useEffect, useState } from "react";
-import NavComponent from "./components/NavBarComponent";
-import ContentComponent from "./components/ContentComponent";
-import CarouselComponent from "./components/CarouselComponent";
-import ContentImgComponent from "./components/ContentImgComponent";
-import FooterComponent from "./components/FooterComponent";
-import ImgComponent from "./components/ImgComponent";
-
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Link from "./pages/Link";
+import Layout from "./components/Layout";
 function App() {
-  const [scrollPosition, setPosition] = useState(0);
-
-  const handleScroll = () => {
-    const position = window.pageYOffset;
-    setPosition(position);
-  };
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
-
   return (
     <div className="App">
-      {scrollPosition < 700 ? <NavComponent /> : ""}
-      {/* <NavComponent /> */}
-      <ImgComponent />
-      <ContentImgComponent />
-      <CarouselComponent />
-      <ContentComponent />
-      <FooterComponent />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="link" element={<Link />} />
+            {/* <Route path="blogs" element={<Blogs />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="*" element={<NoPage />} /> */}
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

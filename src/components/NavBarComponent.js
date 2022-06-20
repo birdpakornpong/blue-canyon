@@ -4,21 +4,23 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import { Form, FormControl, Button, Nav } from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import "./NavBarComponent.css";
+import { Link } from "react-router-dom";
+
 export default function NavComponent() {
   return (
     <Navbar variant="dark" expand="lg" fixed="top" className="height-navbar-i">
       <Container>
-        <Navbar.Brand href="#home" className="nav__link">
+        <Navbar.Brand href="/" className="nav__link">
           React-Bootstrap
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home" className="nav__link">
-              Home
-            </Nav.Link>
-            <Nav.Link href="#link" className="nav__link">
+            <Nav.Link href="/link" className="nav__link">
               Link
+            </Nav.Link>
+            <Nav.Link href="/link" className="nav__link">
+              Product
             </Nav.Link>
             <NavDropdown
               title="Dropdown"
