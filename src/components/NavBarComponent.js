@@ -16,11 +16,11 @@ export default function NavComponent() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="/link" className="nav__link">
-              Link
-            </Nav.Link>
             <Nav.Link href="/product" className="nav__link">
               Product
+            </Nav.Link>
+            <Nav.Link href="/link" className="nav__link">
+              Link
             </Nav.Link>
             <NavDropdown
               title="Dropdown"
