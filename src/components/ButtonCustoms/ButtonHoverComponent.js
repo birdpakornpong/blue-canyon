@@ -4,6 +4,7 @@ import "./ButtonHoverComponent.css";
 export default function ButtonHoverComponent(props) {
   const slideDirection = props.slide;
   const message = props.message;
+  const click = props.onClick;
   return (
     <>
       <button
@@ -12,6 +13,7 @@ export default function ButtonHoverComponent(props) {
             ? "ibtn hover-filled-slide-up"
             : "ibtn hover-filled-slide-left"
         }
+        onClick={click}
       >
         <span>{message ? message : "Clickme"}</span>
       </button>

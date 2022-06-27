@@ -41,7 +41,6 @@ export default function ConnectMetamark() {
         message="connect metamark"
         onClick={connect}
       />
-      <button onClick={connect}>Click</button>
       <p>{signerAddress}</p>
     </article>
   );

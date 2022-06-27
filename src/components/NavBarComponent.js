@@ -19,7 +19,7 @@ export default function NavComponent() {
             <Nav.Link href="/link" className="nav__link">
               Link
             </Nav.Link>
-            <Nav.Link href="/link" className="nav__link">
+            <Nav.Link href="/product" className="nav__link">
               Product
             </Nav.Link>
             <NavDropdown
