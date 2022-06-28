@@ -1,5 +1,6 @@
 import React, { useReducer } from "react";
 
+// useReducer
 const initialTodos = [
   {
     id: 1,

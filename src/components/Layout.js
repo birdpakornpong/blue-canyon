@@ -1,11 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavComponent from "../components/NavBarComponent";
-import ContentComponent from "../components/ContentComponent";
-import CarouselComponent from "../components/CarouselComponent";
-import ContentImgComponent from "../components/ContentImgComponent";
 import FooterComponent from "../components/FooterComponent";
-import ImgComponent from "../components/ImgComponent";
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 export default function Layout() {
   const [scrollPosition, setPosition] = useState(0);
@@ -26,6 +22,7 @@ export default function Layout() {
       {scrollPosition < 700 ? <NavComponent /> : ""}
       {/* <NavComponent /> */}
       <Outlet />
+      <FooterComponent />
     </>
   );
 }
