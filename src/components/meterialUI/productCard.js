@@ -10,8 +10,9 @@ import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
+import PropTypes from "prop-types";
 
-export default function RecipeReviewCard(props) {
+export default function productCard(props) {
   const { product } = props;
   return (
     <Card sx={{ maxWidth: 345 }}>
@@ -46,3 +47,9 @@ export default function RecipeReviewCard(props) {
     </Card>
   );
 }
+
+productCard.propTypes = {
+  name: PropTypes.string,
+  subheader: PropTypes.string,
+  description: PropTypes.string,
+};

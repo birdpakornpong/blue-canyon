@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ButtonHoverComponent from "./ButtonCustoms/ButtonHoverComponent";
+import ButtonHoverComponent from "../ButtonCustoms/ButtonHoverComponent";
 import "./ContentImgComponent.css";
 
 export default function ContentImgComponent() {

@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import ButtonHoverComponent from "./ButtonCustoms/ButtonHoverComponent";
+import ButtonHoverComponent from "../ButtonCustoms/ButtonHoverComponent";
 import "./ContentComponent.css";
 export default function ContentComponent() {
   return (
