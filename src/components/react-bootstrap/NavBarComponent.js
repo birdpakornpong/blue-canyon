@@ -8,8 +8,9 @@ import { Link } from "react-router-dom";
 
 export default function NavComponent() {
   return (
-    <Navbar variant="dark" expand="lg" fixed="top" className="height-navbar-i">
-      <Container>
+    // <Navbar variant="dark" expand="lg" fixed="top" className="height-navbar-i">
+    <Navbar expand="lg" fixed="top" className="height-navbar-i">
+      <Container className="font-color">
         <Navbar.Brand href="/" className="nav__link">
           React-Bootstrap
         </Navbar.Brand>
@@ -39,8 +40,8 @@ export default function NavComponent() {
             </NavDropdown>
           </Nav>
           <Nav className="d-flex">
-            <Nav.Link href="/product" className="nav__link">
-              Product
+            <Nav.Link href="/login" className="nav__link">
+              Register
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

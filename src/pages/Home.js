@@ -11,7 +11,6 @@ export default function Home() {
       <ContentImgComponent />
       <CarouselComponent />
       <ContentComponent />
-      {/* <FooterComponent /> */}
     </>
   );
 }
