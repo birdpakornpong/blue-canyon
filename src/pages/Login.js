@@ -43,7 +43,7 @@ export default function Login() {
               <LockOutlinedIcon />
             </Avatar>
             <Typography component="h1" variant="h5">
-              Login
+              SIGN IN
             </Typography>
             <Box
               component="form"

@@ -1,11 +1,17 @@
-import React, { useContext } from "react";
-import ProductCard from "./productCard";
+import React, { useContext, useEffect } from "react";
+import ProductCard from "./ProductCard";
 import Grid from "@mui/material/Grid";
 import Container from "@mui/material/Container";
 import productContext from "../../context/products/productContext";
+import noteContext from "../../context/notes/noteContext";
 
 export default function ProductSection() {
   const { state } = useContext(productContext);
+  const { state: note, update } = useContext(noteContext);
+
+  useEffect(() => {
+    update();
+  }, []);
 
   return (
     <>
@@ -25,6 +31,9 @@ export default function ProductSection() {
           ))}
         </Grid>
       </Container>
+      <div>
+        This is About {note && note.name} And {note && note.class}
+      </div>
     </>
   );
 }

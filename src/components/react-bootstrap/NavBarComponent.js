@@ -41,7 +41,10 @@ export default function NavComponent() {
           </Nav>
           <Nav className="d-flex">
             <Nav.Link href="/login" className="nav__link">
-              Register
+              Cart
+            </Nav.Link>
+            <Nav.Link href="/login" className="nav__link">
+              Signin
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>
