@@ -1,19 +1,26 @@
 import React from "react";
+import { configureStore } from "@reduxjs/toolkit";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { Provider } from "react-redux";
+import rootReducer from "./main-reducer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { QueryClient, QueryClientProvider } from "react-query";
 
 const queryClient = new QueryClient();
 
+const store = configureStore({ reducer: rootReducer });
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <App />
+      <Provider store={store}>
+        <App />
+      </Provider>
     </QueryClientProvider>
   </React.StrictMode>
 );

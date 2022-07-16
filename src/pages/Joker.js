@@ -2,7 +2,7 @@ import React, { useState } from "react";
 // useMemo ลดการ re-render โดยไม่จำเป็น
 import UseCallback from "../components/HookExample/UseCallback";
 import UseMemo from "../components/HookExample/UseMemo";
-
+import ReducerExample from "../components/HookExample/ReducerExample";
 export default function Joker() {
   const [name, setName] = useState("Mary");
 
@@ -19,6 +19,7 @@ export default function Joker() {
       </div>
       <UseMemo />
       <UseCallback />
+      <ReducerExample />
     </>
   );
 }
