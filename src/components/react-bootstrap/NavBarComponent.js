@@ -12,7 +12,7 @@ export default function NavComponent() {
     <Navbar expand="lg" fixed="top" className="height-navbar-i">
       <Container className="font-color">
         <Navbar.Brand href="/" className="nav__link">
-          React-Bootstrap
+          Birth Website
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -28,7 +28,7 @@ export default function NavComponent() {
               id="basic-nav-dropdown"
               className="nav__link"
             >
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
+              <NavDropdown.Item href="/joker">Joker Page</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">
                 Another action
               </NavDropdown.Item>
@@ -40,7 +40,7 @@ export default function NavComponent() {
             </NavDropdown>
           </Nav>
           <Nav className="d-flex">
-            <Nav.Link href="/login" className="nav__link">
+            <Nav.Link href="/cart" className="nav__link">
               Cart
             </Nav.Link>
             <Nav.Link href="/login" className="nav__link">

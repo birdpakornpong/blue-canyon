@@ -26,7 +26,9 @@ export default function ProductSection() {
         >
           {state.map((product) => (
             <Grid item xs={2} sm={3} md={3} key={product.id}>
-              <ProductCard product={product} />
+              <section oncontextmenu="return false;">
+                <ProductCard product={product} />
+              </section>
             </Grid>
           ))}
         </Grid>

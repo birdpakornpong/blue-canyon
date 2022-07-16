@@ -25,12 +25,13 @@ export default function productCard(props) {
         title={product.name}
         subheader={product.subheader}
       />
-      <CardMedia
+      {/* <CardMedia
         component="img"
         height="194"
         image="/static/images/cards/bag.jpeg"
         alt="Paella dish"
-      />
+      /> */}
+      <img height={194} src="/static/images/cards/bag.jpeg" loading="lazy" />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {product.description}
