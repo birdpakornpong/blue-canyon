@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import UseCallback from "../components/HookExample/UseCallback";
 import UseMemo from "../components/HookExample/UseMemo";
 import ReducerExample from "../components/HookExample/ReducerExample";
+import UseRef from "../components/HookExample/UseRef";
+import UseForm from "../components/HookExample/UseForm";
+
 export default function Joker() {
   const [name, setName] = useState("Mary");
 
@@ -20,6 +23,8 @@ export default function Joker() {
       <UseMemo />
       <UseCallback />
       <ReducerExample />
+      <UseRef />
+      <UseForm />
     </>
   );
 }

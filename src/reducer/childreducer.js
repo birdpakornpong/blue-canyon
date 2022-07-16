@@ -1,4 +1,3 @@
-import React from "react";
 const initialization = {};
 export default function childreducer(state = initialization, action) {
   switch (action.type) {

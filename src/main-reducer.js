@@ -1,4 +1,3 @@
-import React from "react";
 import { combineReducers } from "redux";
 import reducer from "./reducer/reducer";
 import childreducer from "./reducer/childreducer";
